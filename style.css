@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    padding: 15px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: black;
+}
+
+#topnav {
+    font-size: 25px;
+    text-align: right;
+}
+
+.content:nth-child(2){
+    margin-top: 60px;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 20vh;
+}
+
+.content {
+    height: 100vh;
+}
+
+.content:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
