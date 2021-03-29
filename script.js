@@ -1,9 +1,21 @@
-window.onscroll = function() {scrollFunction()};
+var i = 0;
+var speed = 50;
+var txt = '';
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+function scrollAnimation(text) {
+  i = 0;
+  document.getElementById("title").innerHTML = "[guest@davidspecht.de ~]$ ";
+  txt = text;
+  console.log(txt);
+  typeWriter();
+}
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("title").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById(txt).scrollIntoView(true);
   }
-} 
+}

@@ -3,25 +3,23 @@ html {
 }
 
 #header {
+    display: flex;
+    justify-content: space-between;
     top: 0;
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    background-color: black;
+    font-size: 25px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 #topnav {
-    margin: 25px;
     margin-right: 35px;
-    font-size: 25px;
-    text-align: right;
 }
 
 .content:nth-child(2){
-    margin-top: 60px;
-}
-
-#logo {
-    font-weight: bold;
-    font-size: 50px;
+    padding-top: 60px;
 }
 
 h1 {
