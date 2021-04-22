@@ -19,3 +19,8 @@ function typeWriter() {
     document.getElementById(txt).scrollIntoView(true);
   }
 }
+
+function hamSelect() {
+  var list = document.getElementById('hamburger');
+  scrollAnimation(list.options[list.selectedIndex].value);
+}

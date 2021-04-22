@@ -11,13 +11,23 @@
 
 <body>
     <div id="header">
-        <div id="title">[guest@davidspecht.de ~]$ about
+        <div id="title" class="desktop">[guest@davidspecht.de ~]$ about
         </div>
-        <div id="topnav">
-            <a role="button" tabindex="0" onclick="scrollAnimation('about')">about</a> /
-            <a role="button" tabindex="0" onclick="scrollAnimation('projects')">projects</a> /
-            <a role="button" tabindex="0" onclick="scrollAnimation('fpv')">fpv</a> /
-            <a role="button" tabindex="0" onclick="scrollAnimation('social')">social</a>
+        <div id="topnav" class="desktop">
+            <a href="" onclick="scrollAnimation('about')">about</a> /
+            <a href="" onclick="scrollAnimation('projects')">projects</a> /
+            <a href="" onclick="scrollAnimation('fpv')">fpv</a> /
+            <a href="" onclick="scrollAnimation('social')">social</a>
+        </div>
+        <div id="title" class="mobile">David Specht</div>
+        <div id="topnav" class="mobile">
+            <label for="hamburger">&#9776;</label>
+            <select onchange="hamSelect()" style="display: none;" name="hamburger" id="hamburger">
+                <option value="about">about</option>
+                <option value="projects">projects</option>
+                <option value="fpv">fpv</option>
+                <option value="social">social</option>
+            </select>
         </div>
     </div>
     <div id="about" class="content">

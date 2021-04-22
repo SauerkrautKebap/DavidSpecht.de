@@ -18,22 +18,20 @@ html {
     margin-right: 35px;
 }
 
-.content:nth-child(2){
-    padding-top: 60px;
-}
-
 h1 {
     text-align: left;
     font-size: 20vh;
 }
 
 .content {
+    display: flex;
+    align-items: center;
     padding: 10px;
     height: 100vh;
 }
 
 .text {
-    width: 50vw;
+    width: 50%;
 }
 
 .content:nth-child(odd) {
@@ -50,4 +48,22 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .text {
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
