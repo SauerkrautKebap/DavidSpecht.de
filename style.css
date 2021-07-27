@@ -32,7 +32,7 @@ h1 {
 }
 
 .text {
-    width: 50%;
+    width: clamp(45ch, 50%, 75ch);
 }
 
 .content:nth-child(odd) {
@@ -56,9 +56,6 @@ a {
 }
 
 @media only screen and (max-aspect-ratio: 1 / 1){
-    .text {
-        width: 100%;
-    }
 
     .desktop {
         display: none;
