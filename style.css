@@ -89,6 +89,7 @@ h1 {
     padding-bottom: 40px;
     background: var(--tetritary);
     color: var(--secondary);
+    cursor: pointer;
 }
 
 .project-card:hover {

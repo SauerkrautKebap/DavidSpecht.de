@@ -22,7 +22,7 @@ async function makeCards() {
     var description = card.getElementById("project-description");
     var latestEdit = card.getElementById("project-date");
     var fork = card.getElementById("project-fork");
-    div[0].href = repo.html_url;
+    div[0].setAttribute("onclick", "window.location=" + "\'" + repo.html_url + "\'");
     title.textContent = repo.name;
     repo.fork ? fork.removeAttribute("hidden") : "";
     latestEdit.textContent = date.toLocaleString();
