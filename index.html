@@ -30,7 +30,7 @@
             </select>
         </div>
     </div>
-    <div id="about" class="content">
+    <div id="about" class="content flex-container">
         <div class="text">
             Hi, I'm David! </br>
             I'm a soft- and hardware developer based in Germany. My go-to languages are C and Java, but I would consider
@@ -40,7 +40,21 @@
             JavaScript by hand and without any frameworks or tracking.
         </div>
     </div>
-    <div id="projects" class="content"></div>
+    <div id="projects" class="content grid-container">
+        <template id="projectCardTemplate">
+            <div class="grid-item project-card">
+                <div class="project-card-div project-card-col">
+                    <h2 class="project-header project-text" id="project-title"></h2>
+                    <p class="project-description project-text" id="project-description"></p>
+                    <p hidden="false" class="project-fork project-text" id="project-fork">Fork</p>
+                </div>
+                <div class="project-card-div project-border project-spacebetween">
+                    <p class="project-date">Latest activity</p>
+                    <p class="project-date" id="project-date"></p>
+                </div>
+            </div>
+        </template>
+    </div>
     <div id="fpv" class="content"></div>
     <div id="social" class="content">
 
