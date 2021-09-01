@@ -24,7 +24,7 @@ async function makeCards() {
     var fork = card.getElementById("project-fork");
     div[0].setAttribute("onclick", "window.location=" + "\'" + repo.html_url + "\'");
     title.textContent = repo.name;
-    repo.fork ? fork.removeAttribute("hidden") : "";
+    repo.fork ? fork.classList.remove("hidden") : "";
     latestEdit.textContent = date.toLocaleString();
     description.textContent = (repo.description != null) ? repo.description : "No descrition availible";
     document.getElementById("projects").appendChild(card);
