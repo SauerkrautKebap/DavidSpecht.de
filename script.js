@@ -2,7 +2,7 @@ var i = 0;
 var speed = 50;
 var txt = '';
 
-const usr = "https://api.github.com/users/SauerkrautKebap/repos";
+const usr = "https://api.github.com/users/SpechtD/repos";
 
 makeCards();
 
